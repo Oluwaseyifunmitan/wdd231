@@ -1,0 +1,75 @@
+@media screen and (min-width: 38rem){
+     body{
+        display: grid;
+        grid-template-columns: 1fr;
+    } 
+    h1{
+        margin-right:1rem;
+    }
+    header span{
+        font-size: 24px;
+    }
+.menuLinks {
+    display: flex;
+    background-color: #21130d;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    
+}
+.menuLinks li a .active{
+    color: gold;
+}
+
+a:hover{
+    color:#873e23
+}
+
+nav ul{
+    flex: 1 1 100%;
+}
+ #myButton{
+    display: none;
+ }
+ 
+    .parent{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 10px;
+        margin:1rem;
+        
+    }
+    
+    .parent section{
+        /* margin: 0.5rem; */
+        border-radius: 5px;
+        border: 1px solid #873e23;
+        box-shadow: 1px 1px 10px #21130d;
+    }
+    .courses{
+        display: grid;
+        /* grid-template-columns:  1fr; */
+        margin:0.5rem;
+    }
+    .courses section{
+        margin: 0.5rem 1rem 0.5rem 1rem;
+        border-radius: 5px;
+        border: 1px solid #873e23;
+        box-shadow: 1px 1px 10px #21130d;
+    }
+    .button{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+        
+    }
+.first-course-list{
+    display: flex;
+}
+    .second-course-list{
+        display: flex;
+    }
+
+    
+}
