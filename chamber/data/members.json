@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Ile-Ife Tech Solutions",
+    "email": "info@gmail.com",
+    "phone": "+234 803 456 7890",
+    "website": "www.ileifetech.com",
+    "image": "company-logo.webp",
+    "membership_level": 3,
+    "industry": "Technology",
+    "description": "A leading IT company specializing in software development and cybersecurity."
+  },
+  {
+    "name": "OAU Agro Ventures",
+    "email": "info@gmail.com",
+    "phone": "+234 802 123 4567",
+    "website": "www.oauagro.com",
+    "image": "company-logo.webp",
+    "membership_level": 2,
+    "industry": "Agriculture",
+    "description": "Providing sustainable and innovative agricultural solutions."
+  },
+  {
+    "name": "Royal Hospitality Ltd",
+    "email": "info@gmail.com",
+    "phone": "+234 701 987 6543",
+    "website": "www.royhospitality.com",
+    "image": "company-logo.webp",
+    "membership_level": 3,
+    "industry": "Hospitality",
+    "description": "Luxury hotel services with a touch of traditional African royalty."
+  }
+]
