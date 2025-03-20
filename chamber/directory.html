@@ -5,16 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Oluwaseyi Makinde" />
     <meta name="description" content="WDD 231 - Web Frontend Development 1" />
-    <meta property="og:title" content="Course home page" />
+    <meta property="og:title" content="Chamber of commerce directory page" />
     <meta property="og:type" content="website" />
     <meta
       property="og:url"
-      content="https://oluwaseyifunmitan.github.io/Wdd231/"
+      content="https://oluwaseyifunmitan.github.io/wdd231/chamber/directory.html"
     />
-    <meta
-      property="og:image"
-      content="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.linkedin.com%2Fpulse%2F10-most-beautiful-places-visit-abuja-damilola-oshunyinka&psig=AOvVaw3n2OvzgHB6bWcNGoyqN2k7&ust=1741814349506000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNDY5aP6gowDFQAAAAAdAAAAABAE"
-    />
+    <meta property="og:image" content="images/chamber2.jpg" />
 
     <title>WDD 231 - Web Frontend Development 1- chamber website</title>
 
@@ -23,6 +20,13 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Fira+Sans:wght@100;300;400&family=Kalnia+Glaze:wght@100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="styles/normalize.css" /> -->
     <link rel="stylesheet" href="styles/large.css" />
     <link rel="stylesheet" href="styles/small.css" />
     <link rel="icon" href="images/favicon.ico" />
@@ -30,18 +34,19 @@
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/data.js" defer></script>
     <script src="scripts/date.js" defer></script>
+    <script src="scripts/layout.js" defer></script>
   </head>
   <body>
     <header>
       <div class="logo">
         <img
-          src="images/DALL·E 2025-03-14 20.11.46 - A professional and modern logo for the 'Ile-Ife Chamber of Commerce'. The design should be simple yet elegant, featuring an abstract representation of.webp"
+          src="images/herologo.png"
           alt="company logo"
           width="50"
           height="60"
         />
         <div class="content">
-          <h1>Ile-Ife</h1>
+          <h2>Ile-Ife</h2>
           <p>Chamber of Commerce</p>
         </div>
         <img src="images/image.png" alt="icon" width="30" height="30" />
@@ -49,7 +54,7 @@
       <a id="menu" href="#"></a>
       <nav>
         <ul class="navigation">
-          <li><a href="#">Home</a></li>
+          <li><a class="active" href="#">Home</a></li>
           <li><a href="">Directory</a></li>
           <li><a href="">Join</a></li>
           <li><a href="">Discovery</a></li>
@@ -61,11 +66,7 @@
       <div>
         <section>
           <div class="hero-section">
-            <img
-              class="hero-img"
-              src="images/DALL·E 2025-03-14 21.45.28 - A professional and modern hero image featuring two Black business professionals standing confidently in front, with a clean white background. The indi.webp"
-              alt="hero image"
-            />
+            <img class="hero-img" src="images/chamber3.png" alt="hero image" width="1500" height="700"/>
             <button class="hero-button">Keynote Tickets</button>
           </div>
 
@@ -107,11 +108,15 @@
           </section>
         </div>
       </div>
+      <div class="menu">
+        <button id="grid">⏹️Grid</button>
+        <button id="list">📄List</button>
+      </div>
       <div id="members-list"></div>
     </main>
     <footer>
       <div class="footerp">
-       <p><strong>Ile-Ife Chamber of Commerce</strong></p>
+        <p><strong>Ile-Ife Chamber of Commerce</strong></p>
         <p>Ile-Ife, Nigeria</p>
         <p>Ile-Ife, Mail 999</p>
         <p>info@ile-ife.org</p>

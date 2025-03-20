@@ -4,11 +4,8 @@
     display: flex;
   }
   .navigation li {
-    display: block; /* change state in small view */
+    display: block; 
     flex: 1 1 100%;
-  }
-  .navigation a {
-    text-align: center;
   }
 
   #menu {
@@ -22,10 +19,12 @@
 }
 .parent{
   display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr;
+   
     column-gap: 10px;
     margin: 1rem;
 }
+
 #members-list{
   display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -33,6 +32,8 @@
     margin: 1rem;
     
 }
+
+
 .member-card{
   box-shadow: 0 4px 15px 0 #006699;
 }

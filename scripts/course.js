@@ -88,16 +88,18 @@ filterButtons.forEach((button) => {
   });
 });
 
-// const totalCredits = courses.reduce((sum, course) => sum + course.credits, 0);
-// document.querySelector(
-//   "#totalCredits"
-// ).textContent = ⁠ Total Credits: ${totalCredits} ⁠;
+const totalCredits = courses.reduce((sum, course) => sum + course.credits, 0);
+document.querySelector(
+  "#totalCredits"
+).textContent = `Total Credits: ${totalCredits}`;
 
+// classes taken
+if(completed === "true"){
 
-// // classes taken
-// const completedCourses = ["CSE 110"];
-// document.querySelectorAll(".course-button").forEach((button) => {
-//   if (completedCourses.includes(button.textContent)) {
-//     button.style.border = "2px solid green";
-//   }
-// });
+  document.querySelectorAll(".course-button").forEach((button) => {
+    if (completedCourses.includes(button.textContent)) {
+      button.style.border = "2px solid green";
+    }
+  });
+}
+
