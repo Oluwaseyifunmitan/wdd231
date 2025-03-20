@@ -23,18 +23,17 @@ header {
 section h1 {
   margin: 1rem 0 1rem 1.5rem;
   color: #1e81b0;
-  
 }
 header p {
-  font-size: 12px;
-  color:white;
+  font-size: 15px;
+  color: white;
 }
-.content{
+.content {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  color:white;
-  font-size: 30px;
+  color: white;
+  font-size: 20px;
 }
 .logo {
   display: flex;
@@ -51,7 +50,7 @@ header p {
 
 #menu::before {
   content: "≡";
-  color:white;
+  color: white;
 }
 
 nav {
@@ -75,15 +74,14 @@ nav {
   font-weight: 700;
   transition: 0.5s;
   font-size: clamp(1rem, 2vmin, 1.5rem);
-  color:white;
+  color: white;
 }
 
-.navigation a:hover
- {
+.navigation a:hover {
   color: white;
   background-color: black;
 }
-.navigation .active{
+.navigation .active {
   background-color: #ace;
 }
 
@@ -194,8 +192,8 @@ hr {
   margin-bottom: 2rem;
 }
 .menu button {
-	padding: 1rem;
-	font-weight: 700;
+  padding: 1rem;
+  font-weight: 700;
   margin: 0 0 0.5rem 0;
   background-color: #ace;
   color: #fff;
@@ -203,38 +201,38 @@ hr {
   box-shadow: 0 4px 15px 0 #006699;
   animation: example 1s infinite;
 }
-#grid{
-  margin-left: 1.5rem ;
+#grid {
+  margin-left: 1.5rem;
 }
 .list {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .list div {
-	display: grid;
-	grid-template-columns: 2fr 1fr 1fr 1fr;
-	margin: 0.2rem;
-	padding: 0.25rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  margin: 0.2rem;
+  padding: 0.25rem;
   gap: 10px;
   align-items: center;
 }
 
-.list hr{
+.list hr {
   display: none;
 }
 
 .list div img {
-	display: none; /* smaller viewports only */
+  display: none; /* smaller viewports only */
 }
 
 .list div h3 {
-	font-size: 1rem;
-	font-family: Roboto, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-family: Roboto, Helvetica, sans-serif;
 }
 
 .list div:nth-child(even) {
-	background-color: #ace;
+  background-color: #ace;
 }
 footer {
   background-color: #006699;
