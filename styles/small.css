@@ -31,39 +31,57 @@ header span {
   color: #ffffff;
   font-size: 20px;
 }
-#myButton {
-  font-size: 2rem;
-  border: none;
-  background: none;
-  color: #fff;
-  text-align: left;
-  cursor: pointer;
-  width: 100%;
-  padding: 0.25rem 2vw;
-  margin: 2rem;
+#menu {
+  font-size: 3rem;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  color: #000;
 }
 
-.menuLinks li {
-  list-style-type: none;
-  display: none;
+#menu::before {
+  content: "≡";
+  color: black;
 }
-.menuLinks.open {
-  margin: 0 auto;
-	max-width: 760px;
-}
-.menuLinks li a {
-  text-decoration: none;
-  display: block;
-  color: #fff;
-  padding: 0.75em 2vw;
+
+nav {
   background-color: #21130d;
 }
-
-.menuLinks li a:hover {
-  color: gold;
+.navigation {
+  list-style: none;
+  margin: 0 auto;
+  max-width: 760px;
 }
-.menuLinks li .active{
-  color: gold;
+
+.navigation li {
+  display: none;
+}
+.navigation a {
+  display: block;
+  padding: 0.75rem;
+  text-align: left;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  transition: 0.5s;
+  font-size: clamp(1rem, 2vmin, 1.5rem);
+  color: white;
+}
+
+.navigation a:hover {
+  color: black;
+  background-color: white;
+}
+.navigation .active {
+  color: #ace;
+}
+
+.show li {
+  display: block;
+}
+
+#menu.show::before {
+  content: "X";
 }
 .parent section {
   margin: 0 0.5rem 0 0.5rem;
@@ -160,55 +178,3 @@ footer {
   padding-top: 0.5rem;
 }
 
-#menu {
-  font-size: 3rem;
-  font-weight: 700;
-  text-decoration: none;
-  padding: 0.5rem 0.75rem;
-  color: #000;
-}
-
-#menu::before {
-  content: "≡";
-  color: black;
-}
-
-nav {
-  background-color: #21130d;
-}
-.navigation {
-  list-style: none;
-  margin: 0 auto;
-  max-width: 760px;
-}
-
-.navigation li {
-  display: none;
-}
-.navigation a {
-  display: block;
-  padding: 0.75rem;
-  text-align: left;
-  text-decoration: none;
-  color: black;
-  font-weight: 700;
-  transition: 0.5s;
-  font-size: clamp(1rem, 2vmin, 1.5rem);
-  color: white;
-}
-
-.navigation a:hover {
-  color: black;
-  background-color: white;
-}
-.navigation .active {
-  color: #ace;
-}
-
-.show li {
-  display: block;
-}
-
-#menu.show::before {
-  content: "X";
-}

@@ -9,25 +9,17 @@
   header span {
     font-size: 24px;
   }
-  .menuLinks {
+  .navigation {
     display: flex;
-    background-color: #21130d;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: space-evenly;
-   
   }
-  
-
-  .menuLinks li {
-    display: block; /* change state in small view */
+  .navigation li {
+    display: block; 
     flex: 1 1 100%;
   }
-  #myButton {
+
+  #menu {
     display: none;
   }
-
   .parent {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -66,15 +58,5 @@
     margin: 1rem 0 1rem 0;
   }
 
-  .navigation {
-    display: flex;
-  }
-  .navigation li {
-    display: block; 
-    flex: 1 1 100%;
-  }
-
-  #menu {
-    display: none;
-  }
+  
 }
