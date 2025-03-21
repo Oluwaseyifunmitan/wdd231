@@ -66,7 +66,7 @@ const courses = [
     completed: false,
   },
 ];
-console.log(courses.subject);
+
 const courseList = document.querySelector("#course-list");
 courses.forEach((course) => {
   const btn = document.createElement("button");
@@ -76,30 +76,55 @@ courses.forEach((course) => {
 });
 
 const filterButtons = document.querySelectorAll(".button");
+const courseButtons = document.querySelectorAll(".course-button");
+
 filterButtons.forEach((button) => {
   button.addEventListener("click", () => {
-    const type = button.textContent;
-    document.querySelectorAll(".course-button").forEach((btn) => {
-      btn.style.display =
-        type === "All" || btn.classList.contains(type.toLowerCase())
-          ? "block"
-          : "none";
+    const type = button.textContent.trim();
+
+    courseButtons.forEach((btn) => {
+      if (type === "All") {
+        btn.style.display = "block"; // Show all courses
+      } else {
+        btn.style.display = btn.textContent.includes(type) ? "block" : "none";
+      }
     });
   });
 });
 
-const totalCredits = courses.reduce((sum, course) => sum + course.credits, 0);
-document.querySelector(
-  "#totalCredits"
-).textContent = `Total Credits: ${totalCredits}`;
+// const totalCredits = courses.reduce((sum, course) => sum + course.credits, 0);
+// document.querySelector(
+//   "#totalCredits"
+// ).textContent = `Total Credits: ${totalCredits}`;
+
+// Ensure `courses` is an array of objects with a `credits` property
+if (Array.isArray(courses) && courses.length > 0) {
+  const totalCredits = courses.reduce(
+    (sum, course) => sum + (course.credits || 0),
+    0
+  );
+
+  const totalCreditsElement = document.querySelector("#total-credit"); // Fix ID selector
+  if (totalCreditsElement) {
+    totalCreditsElement.textContent = `Total Credits: ${totalCredits}`;
+  } else {
+    console.error("Element with ID 'total-credit' not found.");
+  }
+} else {
+  console.error("Courses array is empty or not defined.");
+}
 
 // classes taken
-if(completed === "true"){
+// Get an array of completed course numbers
+const completedCourses = courses
+  .filter((course) => course.completed) // Get only completed courses
+  .map((course) => `${course.subject} ${course.number}`); // Format as text to match button text
 
-  document.querySelectorAll(".course-button").forEach((button) => {
-    if (completedCourses.includes(button.textContent)) {
-      button.style.border = "2px solid green";
-    }
-  });
-}
+document.querySelectorAll(".course-button").forEach((button) => {
+  if (completedCourses.includes(button.textContent.trim())) {
+    button.style.backgroundColor = "Maroon";
+  }
+});
+
+console.log("Completed Courses:", completedCourses);
 
