@@ -10,13 +10,14 @@ body {
 }
 
 header {
-  display: flex;
-  justify-content: flex-start;
+  
+ 
   background-color: #1e81b0;
   
 }
 .header{
   display: flex;
+  
 
 }
 .hero-img {

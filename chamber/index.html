@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Oluwaseyi Makinde" />
     <meta name="description" content="WDD 231 - Web Frontend Development 1" />
     <meta property="og:title" content="Chamber of commerce home page" />
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content="website" >
     <meta
       property="og:url"
       content="https://oluwaseyifunmitan.github.io/wdd231/chamber/index.html"
     />
-    <meta property="og:image" content="images/chamber2.jpg" />
+    <meta property="og:image" content="images/chamber3.png" >
 
     <title>Ile-Ife chamber of commerce|home</title>
 
@@ -38,7 +38,7 @@
   </head>
   <body>
     <header>
-      
+      <div class="header">
       <img
         src="images/herologo.png"
         alt="company logo"
@@ -50,8 +50,9 @@
         <h2>Ile-Ife</h2>
         <p>Chamber of Commerce</p>
       </div>
-    </header>
-      <div class="hamburger"><a id="menu" href="#"></a>
+   
+    </div>
+      <a id="menu" href="#"></a>
 
       <nav>
         <ul class="navigation">
@@ -61,9 +62,8 @@
           <li><a href="">Discovery</a></li>
         </ul>
       </nav>
-    </div>
-   
-
+    
+  </header>
     <main>
       <div>
         <section>
@@ -93,17 +93,14 @@
               </p>
               <p>
                 📌 <b>Description:</b> Join us for an exclusive evening of
-                networking, where business owners, entrepreneurs, and industry
-                professionals come together to share insights, create
-                partnerships, and explore new opportunities. Light refreshments
-                will be served.
+                networking, and explore new opportunities. 
               </p>
             </div>
           </section>
           <section>
             <h2>Current Weather</h2>
             <div class="img">
-              <img id="weather-icon" src="" alt="weather Icon" />
+              <img id="weather-icon" src="https://openweathermap.org/img/wn/${data.list[0].weather[0].icon}@2x.png" alt="weather Icon" />
             </div>
             <div id="current-temp"></div>
           </section>
