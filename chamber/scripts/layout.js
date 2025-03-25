@@ -4,7 +4,7 @@ const display = document.querySelector("#members-list");
 
 gridbutton.addEventListener("click", () => {
   display.style.display = "grid";
-  display.style.gridTemplateColumns = "repeat(auto-fit, minmax(200px, 1fr))";
+  display.style.gridTemplateColumns = "repeat(auto-fit, minmax(400px, 1fr))";
   display.style.gap = "20px";
 
   display.classList.add("grid");

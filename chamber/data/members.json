@@ -5,7 +5,7 @@
     "phone": "+234 803 456 7890",
     "website": "www.ileifetech.com",
     "image": "company-logo.webp",
-    "membership_level": 3,
+    "membership_level": "member",
     "industry": "Technology",
     "description": "A leading IT company specializing in software development and cybersecurity."
   },
@@ -15,7 +15,7 @@
     "phone": "+234 802 123 4567",
     "website": "www.oauagro.com",
     "image": "company-logo.webp",
-    "membership_level": 2,
+    "membership_level": "silver",
     "industry": "Agriculture",
     "description": "Providing sustainable and innovative agricultural solutions."
   },
@@ -25,8 +25,48 @@
     "phone": "+234 701 987 6543",
     "website": "www.royhospitality.com",
     "image": "company-logo.webp",
-    "membership_level": 3,
+    "membership_level": "gold",
     "industry": "Hospitality",
     "description": "Luxury hotel services with a touch of traditional African royalty."
+  },
+  {
+    "name": "Future Energy Ltd",
+    "email": "contact@futureenergy.com",
+    "phone": "+234 809 765 4321",
+    "website": "www.futureenergy.com",
+    "image": "company-logo.webp",
+    "membership_level": "silver",
+    "industry": "Renewable Energy",
+    "description": "Developing sustainable energy solutions for Africa’s future."
+  },
+  {
+    "name": "Naija Express Logistics",
+    "email": "support@naijaexpress.com",
+    "phone": "+234 810 654 3210",
+    "website": "www.naijaexpress.com",
+    "image": "company-logo.webp",
+    "membership_level": "gold",
+    "industry": "Logistics & Transport",
+    "description": "Fast and reliable logistics solutions across Nigeria."
+  },
+  {
+    "name": "Prime Fashion House",
+    "email": "info@primefashion.com",
+    "phone": "+234 902 345 6789",
+    "website": "www.primefashion.com",
+    "image": "company-logo.webp",
+    "membership_level": "member",
+    "industry": "Fashion & Apparel",
+    "description": "Bringing African-inspired fashion to the global market."
+  },
+  {
+    "name": "Medisave Pharmaceuticals",
+    "email": "sales@medisavepharma.com",
+    "phone": "+234 817 567 8901",
+    "website": "www.medisavepharma.com",
+    "image": "company-logo.webp",
+    "membership_level": "gold",
+    "industry": "Healthcare",
+    "description": "Providing quality and affordable pharmaceutical products."
   }
 ]

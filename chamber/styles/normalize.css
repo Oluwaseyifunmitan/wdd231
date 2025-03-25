@@ -205,21 +205,21 @@ html {
    * Restore the focus styles unset by the previous rule.
    */
   
-  button:-moz-focusring,
+  /* button:-moz-focusring,
   [type="button"]:-moz-focusring,
   [type="reset"]:-moz-focusring,
   [type="submit"]:-moz-focusring {
     outline: 1px dotted ButtonText;
-  }
+  } */
   
   /**
    * Correct the padding in Firefox.
    */
   
-  fieldset {
+  /* fieldset {
     padding: 0.35em 0.75em 0.625em;
   }
-  
+   */
   /**
    * 1. Correct the text wrapping in Edge and IE.
    * 2. Correct the color inheritance from `fieldset` elements in IE.

@@ -92,12 +92,7 @@ filterButtons.forEach((button) => {
   });
 });
 
-// const totalCredits = courses.reduce((sum, course) => sum + course.credits, 0);
-// document.querySelector(
-//   "#totalCredits"
-// ).textContent = `Total Credits: ${totalCredits}`;
 
-// Ensure `courses` is an array of objects with a `credits` property
 if (Array.isArray(courses) && courses.length > 0) {
   const totalCredits = courses.reduce(
     (sum, course) => sum + (course.credits || 0),
@@ -122,9 +117,9 @@ const completedCourses = courses
 
 document.querySelectorAll(".course-button").forEach((button) => {
   if (completedCourses.includes(button.textContent.trim())) {
-    button.style.backgroundColor = "Maroon";
+    button.style.backgroundColor = "brown";
   }
 });
 
-console.log("Completed Courses:", completedCourses);
+
 

@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Oluwaseyi Makinde" />
     <meta name="description" content="WDD 231 - Web Frontend Development 1" />
-    <meta property="og:title" content="Chamber of commerce directory page" />
+    <meta property="og:title" content="Chamber of commerce home page" />
     <meta property="og:type" content="website" />
     <meta
       property="og:url"
-      content="https://oluwaseyifunmitan.github.io/wdd231/chamber/directory.html"
+      content="https://oluwaseyifunmitan.github.io/wdd231/chamber/index.html"
     />
     <meta property="og:image" content="images/chamber2.jpg" />
 
-    <title>Ile-Ife chamber of commerce|directory</title>
+    <title>Ile-Ife chamber of commerce|home</title>
 
     <link
       rel="stylesheet"
@@ -34,38 +34,84 @@
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/data.js" defer></script>
     <script src="scripts/date.js" defer></script>
-    <script src="scripts/layout.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
   </head>
   <body>
     <header>
-      <div class="logo">
-        <img
-          src="images/herologo.png"
-          alt="company logo"
-          width="50"
-          height="60"
-        />
-        <div class="content">
-          <h2>Ile-Ife</h2>
-          <p>Chamber of Commerce</p>
-        </div>
-        <img src="images/image.png" alt="icon" width="30" height="30" />
+      
+      <img
+        src="images/herologo.png"
+        alt="company logo"
+        width="50"
+        height="60"
+      />
+
+      <div class="content">
+        <h2>Ile-Ife</h2>
+        <p>Chamber of Commerce</p>
       </div>
-      <a id="menu" href="#"></a>
+    </header>
+      <div class="hamburger"><a id="menu" href="#"></a>
+
       <nav>
         <ul class="navigation">
-          <li><a href="index.html">Home</a></li>
-          <li><a  class="active" href="#">Directory</a></li>
+          <li><a class="active" href="#">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
           <li><a href="">Join</a></li>
           <li><a href="">Discovery</a></li>
         </ul>
       </nav>
-    </header>
+    </div>
+   
 
     <main>
-      <div class="menu">
-        <button id="grid">⏹️Grid</button>
-        <button id="list">📄List</button>
+      <div>
+        <section>
+          <div class="hero-section">
+            <img
+              class="hero-img"
+              src="images/chamber3.png"
+              alt="hero image"
+              width="1500"
+              height="700"
+            />
+            <button class="hero-button">Join Us</button>
+          </div>
+
+          <h1>Home</h1>
+        </section>
+        <div class="parent">
+          <section>
+            <h2>Event</h2>
+            <div class="event">
+              <p>📅 Business Networking Gala</p>
+
+              <p>📍 <b>Venue:</b> Grand Royale Hotel, Main Hall</p>
+              <p>🕒 <b>Date & Time:</b> April 15, 2025 | 6:00 PM – 9:00 PM</p>
+              <p>
+                🎟️ <b>Registration:</b> Free for members | $20 for non-members
+              </p>
+              <p>
+                📌 <b>Description:</b> Join us for an exclusive evening of
+                networking, where business owners, entrepreneurs, and industry
+                professionals come together to share insights, create
+                partnerships, and explore new opportunities. Light refreshments
+                will be served.
+              </p>
+            </div>
+          </section>
+          <section>
+            <h2>Current Weather</h2>
+            <div class="img">
+              <img id="weather-icon" src="" alt="weather Icon" />
+            </div>
+            <div id="current-temp"></div>
+          </section>
+          <section>
+            <h2>Weather forecast</h2>
+            <div id="forecast"></div>
+          </section>
+        </div>
       </div>
       <div id="members-list"></div>
     </main>
