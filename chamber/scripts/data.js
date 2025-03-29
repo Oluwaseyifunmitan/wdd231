@@ -5,14 +5,14 @@ async function getData() {
     const response = await fetch("./data/members.json");
     if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
     const data = await response.json();
-    // displayMembers(data);
-    const filteredMembers = data.filter(member => member.membership_level === "silver" || member.membership_level === "gold");
+    displayMembers(data);
+    // const filteredMembers = data.filter(member => member.membership_level === "silver" || member.membership_level === "gold");
     
     // Shuffle and pick 3 random members
-    const selectedMembers = getRandomMembers(filteredMembers, 3);
+    // const selectedMembers = getRandomMembers(filteredMembers, 3);
 
-    displayMembers(selectedMembers);
-    console.log(selectedMembers);
+    // displayMembers(selectedMembers);
+    // console.log(selectedMembers);
   } catch (error) {
     console.error(error.message);
   }
