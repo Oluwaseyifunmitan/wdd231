@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <meta name="author" content="Oluwaseyi Makinde" >
     <meta name="description" content="WDD 231 - Web Frontend Development 1" >
-    <meta property="og:title" content="Chamber of commerce home page" >
+    <meta property="og:title" content="Chamber of commerce directory page" >
     <meta property="og:type" content="website" >
     <meta
       property="og:url"
-      content="https://oluwaseyifunmitan.github.io/wdd231/chamber/index.html"
+      content="https://oluwaseyifunmitan.github.io/wdd231/chamber/directory.html"
     />
-    <meta property="og:image" content="images/chamber3.png" />
+    <meta property="og:image" content="images/chamber2.jpg" />
 
-    <title>Ile-Ife chamber of commerce|home</title>
+    <title>Ile-Ife chamber of commerce|directory</title>
 
     <link
       rel="stylesheet"
@@ -29,12 +29,14 @@
     <!-- <link rel="stylesheet" href="styles/normalize.css" /> -->
     <link rel="stylesheet" href="styles/large.css" />
     <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/joinl.css">
+    <link rel="stylesheet" href="styles/joins.css">
     <link rel="icon" href="images/favicon.ico" />
 
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/filtered.js" defer></script>
+    
     <script src="scripts/date.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/info.js" defer></script>
   </head>
   <body>
     <header>
@@ -50,64 +52,19 @@
     </header>
     <nav id="animateme">
       <ul class="navigation">
-        <li><a class="active" href="#">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="directory.html">Directory</a></li>
-        <li><a href="join.html">Join</a></li>
+        <li><a class="active" href="#">Join</a></li>
         <li><a href="discovery.html">Discovery</a></li>
       </ul>
     </nav>
     <main>
-      <div>
-        <section>
-          <div class="hero-section">
-            <img
-              class="hero-img"
-              src="images/chamber3.png"
-              alt="hero image"
-              width="1500"
-              height="700"
-            />
-            <button class="hero-button">Join Us</button>
-          </div>
+      <h1>Thank You For Joining</h1>
+      
+<div id="myresults"></div>
+            
 
-          <h1>Home</h1>
-        </section>
-        <div class="parent">
-          <section>
-            <h2>Event</h2>
-            <div class="event">
-              <p>📅 Business Networking Gala</p>
-
-              <p>📍 <b>Venue:</b> Grand Royale Hotel, Main Hall</p>
-              <p>🕒 <b>Date & Time:</b> April 15, 2025 | 6:00 PM – 9:00 PM</p>
-              <p>
-                🎟️ <b>Registration:</b> Free for members | $20 for non-members
-              </p>
-              <p>
-                📌 <b>Description:</b> Join us for an exclusive evening of
-                networking, and explore new opportunities.
-              </p>
-            </div>
-          </section>
-          <section>
-            <h2>Current Weather</h2>
-            <div class="img">
-              <img
-                id="weather-icon"
-                src="https://openweathermap.org/img/wn/${data.list[0].weather[0].icon}@2x.png"
-                alt="weather Icon"
-              />
-            </div>
-            <div id="current-temp"></div>
-          </section>
-          <section>
-            <h2>Weather forecast</h2>
-            <div id="forecast"></div>
-          </section>
-        </div>
-      </div>
-      <div id="members-list"></div>
-    </main>
+       </main>     
     <footer>
       <div class="footerp">
         <p><strong>Ile-Ife Chamber of Commerce</strong></p>
