@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Oluwaseyi Makinde" />
+    <meta name="description" content="WDD 231 - Web Frontend Development 1" />
+    <meta property="og:title" content="Chamber of commerce directory page" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://oluwaseyifunmitan.github.io/wdd231/chamber/directory.html"
+    />
+    <meta property="og:image" content="images/chamber2.jpg" />
+
+    <title>Ile-Ife chamber of commerce|directory</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Fira+Sans:wght@100;300;400&family=Kalnia+Glaze:wght@100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="styles/normalize.css" /> -->
+    <link rel="stylesheet" href="styles/large.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/joinl.css" />
+    <link rel="stylesheet" href="styles/joins.css" />
+    <link rel="icon" href="images/favicon.ico" />
+
+    <script src="scripts/navigation.js" defer></script>
+
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/visit.js" defer></script>
+    <script src="scripts/discover.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <img
+        src="images/herologo.png"
+        alt="company logo"
+        width="50"
+        height="60"
+      />
+
+      <span>Ile-Ife Chamber of Commerce</span>
+      <button id="mybutton"></button>
+    </header>
+    <nav id="animateme">
+      <ul class="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a class="active" href="#">Discovery</a></li>
+      </ul>
+    </nav>
+    <main>
+      <aside id="visitMessage" class="visit-info"></aside>
+
+      <section class="discover-grid" id="cardContainer">
+        <!-- JS will inject cards here -->
+      </section>
+    </main>
+    <footer>
+      <div class="footerp">
+        <p><strong>Ile-Ife Chamber of Commerce</strong></p>
+        <p>Ile-Ife, Nigeria</p>
+        <p>Ile-Ife, Mail 999</p>
+        <p>info@ile-ife.org</p>
+        <p>+234 909 678 9012</p>
+      </div>
+      <div class="footericon">
+        <a href="#" class="fa fa-youtube"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+      </div>
+      <div class="footerjs">
+        <p>Wdd 231 class project</p>
+        <p>&copy;<span id="currentyear"></span> Oluwaseyi Oyindasola Makinde</p>
+        <p id="lastModified"></p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+export const places = [
+    {
+      "title": "Ooni’s Palace",
+      "address": "Iremo Road, Ile-Ife, Osun State, Nigeria",
+      "cost": "Free (public viewing)",
+      "description": "A majestic palace of Yoruba royalty, rich in history, and a hub of traditional ceremonies and cultural heritage.",
+      "image": "images/ooni-palace.webp"
+    },
+    {
+      "title": "National Museum of Ile-Ife",
+      "address": "Enuwa Square, Ile-Ife, Osun State, Nigeria",
+      "cost": "₦500 entry",
+      "description": "Home to famous Ife bronze heads, terracotta artifacts, and cultural exhibits showcasing Yoruba history.",
+      "image": "images/national-museum.webp"
+    },
+    {
+      "title": "Opa Oranmiyan",
+      "address": "Mopo, Ile-Ife, Osun State, Nigeria",
+      "cost": "Free",
+      "description": "An ancient monolith believed to be the staff or grave marker of the great Yoruba warrior Oranmiyan.",
+      "image": "images/opa-oranmiyan.webp"
+    },
+    {
+      "title": "OAU Botanical Garden",
+      "address": "Obafemi Awolowo University Campus, Ile-Ife, Osun State, Nigeria",
+      "cost": "₦200",
+      "description": "A quiet and lush garden perfect for nature lovers, educational trips, or solo relaxation.",
+      "image": "images/oau-botanical-garden.webp"
+    },
+    {
+      "title": "Moremi Ajasoro Statue",
+      "address": "Ooni’s Palace Grounds, Iremo Road, Ile-Ife, Osun State, Nigeria",
+      "cost": "Free",
+      "description": "A massive and inspiring statue honoring the legendary Yoruba heroine, Moremi Ajasoro.",
+      "image": "images/moremi-statue.webp"
+    },
+    {
+      "title": "Ife Bronze Artisans Workshop",
+      "address": "Modomo Area, Ile-Ife, Osun State, Nigeria",
+      "cost": "₦1000 (Tour & Souvenir)",
+      "description": "Meet local bronze sculptors, learn their techniques, and buy handmade traditional artworks.",
+      "image": "images/bronze-workshop.webp"
+    },
+    {
+      "title": "OAU Campus Walk",
+      "address": "Obafemi Awolowo University, Ile-Ife, Osun State, Nigeria",
+      "cost": "Free (public areas)",
+      "description": "A stroll through Africa’s most scenic campus, featuring striking architecture and natural landscapes.",
+      "image": "images/oau-campus.webp"
+    },
+    {
+      "title": "Oja Titun (New Market)",
+      "address": "Sabo Road, Ile-Ife, Osun State, Nigeria",
+      "cost": "Free entry",
+      "description": "Bustling local market with traditional foods, clothing, souvenirs, and fresh farm produce.",
+      "image": "images/oja-titun.webp"
+    },
+    
+  ];
+  
