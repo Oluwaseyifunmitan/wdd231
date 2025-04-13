@@ -12,7 +12,6 @@
 
   #animateme {
     grid-template-rows: 1fr;
-    
   }
   .parent section {
     /* margin: 0.5rem; */
@@ -69,23 +68,33 @@
     font-size: 14px;
     /* text-align: center; */
   }
-}
-@media (min-width: 641px) and (max-width: 1024px) {
-  .discover-grid {
-    grid-template-columns: 1fr 1fr;
+  .cardd {
+    display: grid;
     grid-template-areas:
-      "card1 card2"
-      "card3 card4"
-      "card5 card6"
-      "card7 card8";
+      "name name"
+      "photograph description"
+      "photograph location"
+      "button button";
+  }
+  .cardd h2 {
+    grid-area: name;
+  }
+  .cardd img {
+    grid-area: photograph;
+  }
+  .cardd address {
+    grid-area: location;
+  }
+  .cardd p {
+   
+    grid-area: description;
   }
 }
 
 @media (min-width: 1025px) {
-  .discover-grid {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas:
-      "card1 card2 card3 card4"
-      "card5 card6 card7 card8";
+  #cardContainer {
+    grid-template-columns: repeat(2, 1fr);
+    
   }
+  
 }

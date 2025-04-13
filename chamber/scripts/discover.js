@@ -4,12 +4,12 @@ fetch("data/interest.json")
     const container = document.getElementById("cardContainer");
     data.forEach((item, index) => {
       const card = document.createElement("div");
-      card.className = "card";
-      card.style.gridArea = `card${index + 1}`;
+      card.className = "cardd";
+      // card.style.gridArea = `card${index + 1}`;
       card.innerHTML = `
         <h2>${item.title}</h2>
         <figure>
-          <img src="${item.image}" alt="${item.title}">
+          <img src="${item.image}" alt="${item.title}" width="300px" height="200px" >
         </figure>
         <address>${item.address}</address>
         <p>${item.description}</p>
