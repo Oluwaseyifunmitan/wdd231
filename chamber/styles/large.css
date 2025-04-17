@@ -68,6 +68,9 @@
     font-size: 14px;
     /* text-align: center; */
   }
+  figure{
+    display: grid;
+  }
   .cardd {
     display: grid;
     grid-template-areas:
@@ -80,13 +83,15 @@
     grid-area: name;
   }
   .cardd img {
+    
     grid-area: photograph;
   }
   .cardd address {
+    display: grid; 
     grid-area: location;
   }
   .cardd p {
-   
+   display: grid;
     grid-area: description;
   }
 }

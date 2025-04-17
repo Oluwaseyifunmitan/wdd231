@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact us with your questions or feedback."
+    />
+    
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="icon" href="images/favicon.ico"/>
+
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    
+    <title>Contact Pathway Support</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">Pathway Guide</div>
+        <button class="menu-toggle" aria-label="Open Menu">☰</button>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a class="active" href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you!</p>
+      </section>
+      <section class="cards-grid">
+        <form method="get" action="submit.html">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+        <div class="footericon">
+          <a href="#" class="fa fa-youtube"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-linkedin"></a>
+        </div>
+        <div class="footerjs">
+          <p>Wdd 231 class project</p>
+          <p>&copy;<span id="currentyear"></span> Oluwaseyi Oyindasola Makinde</p>
+          <p id="lastModified"></p>
+        </div>
+      </footer>
+  </body>
+</html>
